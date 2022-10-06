@@ -1,0 +1,46 @@
+header{
+    grid-area: header;
+}
+
+.bienvenida{
+    grid-area: bienvenida;
+}
+.presentación{
+    grid-area: presentación;
+}
+
+.galeria{
+    grid-area: galeria;
+}
+footer{
+    grid-area: footer;
+}
+
+.envoltura{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "header"
+    "bienvenida"
+    "presentación"
+    "galeria"
+    "footer";
+}
+.galeria, .presentación{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    justify-items:center;
+}
+
+
+.paloma{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    justify-items:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
