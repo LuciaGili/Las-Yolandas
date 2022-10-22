@@ -39,13 +39,26 @@ h2 {
   font-size: 20px;
 }
 
-p {
+.introducción {
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Fira Sans", sans-serif;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  border: 5px solid rgb(94, 135, 239);
+}
+
+p {
+  color: black;
+  font-size: 15px;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  padding: 10px;
+  margin-top: 0px;
   margin-right: 80px;
   margin-bottom: 20px;
   margin-left: 80px;
@@ -137,7 +150,21 @@ footer {
   margin-bottom: 20px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
+  body {
+    background: rgb(242, 211, 98);
+  }
+  footer {
+    background: rgb(153, 210, 245);
+  }
+  .amarillo {
+    background: rgb(153, 210, 245);
+  }
+  p, .introducción {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
   .galeria {
     display: flex;
     flex-direction: row;
@@ -156,6 +183,9 @@ footer {
   footer {
     background: rgb(242, 211, 98);
     background: linear-gradient(180deg, rgb(242, 211, 98) 0%, rgb(251, 254, 253) 40%, rgb(13, 170, 233) 100%);
+  }
+  p, .introducción {
+    font-size: 20px;
   }
   .paloma {
     display: grid;
