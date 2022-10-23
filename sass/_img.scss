@@ -1,8 +1,11 @@
-.primeraImg {
-    width: 50%;
+.primeraImg{
+    width: 75%;
     padding: 20px;
 }
 .segundaImg{
+    @extend .primeraImg;
+}
+.ubi{
     @extend .primeraImg;
 }
 
